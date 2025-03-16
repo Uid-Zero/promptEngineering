@@ -1,4 +1,4 @@
-# Basic Prompting Framework
+# Zero Shot [Basic] Prompting Framework
 
 ## Overview
 Basic prompting refers to the simplest way of interacting with **LLMs** by providing direct instructions or queries. It is the foundation of prompt engineering and serves as the starting point for refining AI responses. 
@@ -24,27 +24,27 @@ Q: Explain the theory of relativity in simple terms.
 A: The theory of relativity, developed by Albert Einstein, explains how space and time are linked for objects moving at a constant speed. It has two main parts: Special Relativity [which deals with how time and space change at high speeds] and General Relativity [which explains how gravity affects time and space].
 ```
 
-## Vague Query
+### Vague Query
 > Q: Tell me something.
 
-### Issue:
+#### Issue:
 - Too vague; does not specify what kind of information is needed.
 - The response may be irrelevant to what the user expects.
 
-## Ambiguous Request
+### Ambiguous Request
 > Q: How does it work?
 
-### Issue:
+#### Issue:
 - ***It*** is unclear; the model has no context about what ***it*** refers to.
 
-## Poorly Structured Prompt
+### Poorly Structured Prompt
 > Q: explain relativity??
 
-### Issue:
+#### Issue:
 - Lack of capitalization and punctuation makes the prompt harder to interpret.
 - No indication of preferred response format or level of detail.
 
-## Limitations of Basic Prompting
+## Limitations of Zero Shot [Basic] Prompting
 - **Lack of Context**: Basic prompts may generate generic or vague responses.
 - **Short Responses**: Without additional instructions, responses might be too brief.
 - **Difficulty Handling Complex Tasks**: For multi-step reasoning or problem-solving, basic prompts might not be enough.
